@@ -1,0 +1,19 @@
+{
+    "version": "2.0",
+    "extensions": {
+        "http": {
+          "routePrefix": "",
+          "maxOutstandingRequests": 20,
+          "maxConcurrentRequests": 10,
+          "dynamicThrottlesEnabled": false
+        }
+    },
+    "logging": {
+        "applicationInsights": {
+            "samplingSettings": {
+                "isEnabled": true,
+                "excludedTypes": "Request"
+            }
+        }
+    }
+}
